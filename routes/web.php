@@ -22,10 +22,7 @@ use App\Http\Controllers\PhotoController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//JOBSHEET 1 (MEMBUAT KTP)
-// Route::get('/', function () {
-//     return view('KTP_Fitria');
-// });
+
 
 //JOBSHEET 2 (ROUTE)
 // Route::get('/hello', function () {
@@ -40,7 +37,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'Ahmad Abror Rozaqi Fatoni  2241760123';
 });
-Route::get('/user/{fitria}', function ($name) {
+Route::get('/user/{rozaqi}', function ($name) {
     return 'Nama saya ' . $name;
 });
 Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
