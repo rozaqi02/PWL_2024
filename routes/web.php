@@ -24,10 +24,10 @@ use App\Http\Controllers\PhotoController;
 */
 
 
-//JOBSHEET 2 (ROUTE)
-// Route::get('/hello', function () {
-//     return 'Hello World';
-// });
+// Jobsheet 2 (ROUTE)
+ Route::get('/hello', function () {
+     return 'Hello World';
+ });
 Route::get('/world', function () {
     return 'World';
 });
@@ -52,7 +52,7 @@ Route::get('/user/{name?}', function ($name = null) {
 Route::get('/user/{name?}', function ($name = 'John') {
     return 'Nama saya :  ' . $name;
 });
-//route name
+// Route name
 Route::get('/user/profile', function () {
     //
 
@@ -62,9 +62,9 @@ Route::get(
     [UserProfileController::class,'show']
 )->name('profile');
 // Generating URLs...
-//$url = route('profile');
+// $url = route('profile');
 // Generating Redirects...
-//return redirect()->route('profile');
+// return redirect()->route('profile');
 
 Route::middleware(['first', 'second'])->group(function () {
     Route::get('/', function () {

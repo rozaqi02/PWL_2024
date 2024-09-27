@@ -9,7 +9,7 @@ class WelcomeController extends Controller
         public function greeting(){
             return view('JS2.hello')
             ->with('name','Ahmad Abror Rozaqi Fatoni')
-            ->with('occupation','Astronaut');
+            ->with('occupation','JAKIII');
             }
 
 }
