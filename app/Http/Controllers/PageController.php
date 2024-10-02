@@ -10,7 +10,7 @@ class PageController extends Controller
         return 'Selamat Datang';
     }
     public function about(){
-        return 'Fitria Ramadhani Prihandiva dan 2241760055';
+        return 'Ahmad Abror Rozaqi Fatoni dan 2241760123';
     }
     public function articles($id){
         return 'Halaman Artikel dengan Id' .$id;

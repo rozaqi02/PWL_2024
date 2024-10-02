@@ -96,17 +96,17 @@ Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
 //Controller Praktikum 2
 Route::get('/hello', [WelcomeController::class,'hello']);
 
-//Modifikasi poin 6
+// Modifikasi langkah 4
 Route::get('/', [PageController::class, 'index']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/articles/{id}', [PageController::class, 'articles']);
 
-//Modifikasi poin 7
+// Modifikasi langkah 5
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'about']);
 Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
-//Resource Controller
+// Resource Controller
 Route::resource('photos', PhotoController::class);
 
 Route::resource('photos', PhotoController::class)->only([
@@ -117,14 +117,14 @@ Route::resource('photos', PhotoController::class)->only([
     ]);
 
 //VIEW
-//langsung direktori views
+
 Route::get('/greeting', function () {
     return view('hello', ['name' => 'Ahmad Abror Rozaqi Fatoni']);
     });
-//via direktori
+
 Route::get('/greeting', function () {
         return view('JS2.hello', ['name' => 'Abror Rozaqi']);
         });
-//via controller
+
 Route::get('/greeting', [WelcomeController::class,
         'greeting']);
